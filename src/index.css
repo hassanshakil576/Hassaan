@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave {
+  display: inline-block;
+  font-size: 2rem;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+.glow-text {
+  text-shadow: 0 0 3px #CED4D7, 0 0 2px #CED4D7, 0 0 5px #CED4D7;
+}
+
+#SvgIcon {
+  height: 32em;
+  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
