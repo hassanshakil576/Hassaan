@@ -7,7 +7,7 @@ const TypewriterText = () => {
       {' '}
       <span className="text-[#d3cace]">
         <Typewriter
-          words={['Front-End Developer', 'Student at SMIT', 'Freelancer']}
+          words={['Front-End Developer', 'Student at SMIT', 'Deep Learner and Observer']}
           loop={true}
           cursor
           cursorStyle="|"

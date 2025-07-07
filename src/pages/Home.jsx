@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
 import Socialicons from "../components/Socialicons"
+import Footer from '../components/Footer'
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
                 <Introduction />
             </div>
             <Socialicons />
-
+            <Footer />
         </>
     )
 }

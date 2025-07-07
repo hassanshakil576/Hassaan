@@ -1,10 +1,16 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
         <>
-            <div className='flex justify-between items-start ml-20 mr-28'>
+            <motion.div
+                className='fixed top-0 left-0 w-full z-50 backdrop-blur-xs bg-[#1f1f24]/60 flex justify-between items-center shadow-2xs'
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+            >
                 <div className="flex-shrink-0 m-8">
                     <a className="text-3xl font-bold text-[#CED4D7] bg-clip-text cursor-pointer font-mono">
                         Hassaan.
@@ -38,7 +44,7 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import TypewriterText from './Typewriter'
 import SvgIcon from "../assets/Computer.svg"
 
@@ -6,8 +7,12 @@ import SvgIcon from "../assets/Computer.svg"
 function Hero() {
     return (
         <>
-            <div className='maindiv flex items-center justify-around'>
-                <div className='children-1'>
+            <div className='maindiv flex items-center justify-around mt-16'>
+                <motion.div className='children-1'
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h3 className='text-[#CED4D7] text-2xl font-mono inline'>Hi There!</h3> <span className="wave text-2xl" role="img" aria-labelledby="wave">
                         👋🏻
                     </span>
@@ -15,8 +20,11 @@ function Hero() {
                     <div className='mt-3'>
                         <TypewriterText />
                     </div>
-                    <button
+                    <motion.button
                         id="ButtonHome"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 0.5 }}
                         className="group relative inline-flex items-center gap-3 p-2 cursor-pointer rounded-md border-2 bg-[#CED4D7] border-[#CED4D7] text-[#000] hover:text-black transition duration-300 mt-5"
                     >
                         <div className="svg-wrapper-1">
@@ -36,13 +44,21 @@ function Hero() {
                         <span className="transition-all duration-300 group-hover:tracking-wider font-bold">
                             <a href="#introduction">Discover More</a>
                         </span>
-                    </button>
+                    </motion.button>
 
-                </div>
+                </motion.div>
                 <div className='children-2'>
-                    <img src={SvgIcon} alt="..." id='SvgIcon' className="transition-transform duration-500 hover:rotate-3 hover:scale-3d" />
+                    <motion.img
+                        src={SvgIcon}
+                        alt="..."
+                        id='SvgIcon'
+                        className="transition-transform duration-500 hover:rotate-3 hover:scale-3d"
+                        initial={{ x: 80, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                    />
                 </div>
-            </div>
+            </div >
         </>
     )
 }
