@@ -3,12 +3,11 @@ import { motion } from "framer-motion";
 import TypewriterText from './Typewriter'
 import SvgIcon from "../assets/Computer.svg"
 
-
 function Hero() {
     return (
         <>
-            <div className='maindiv flex items-center justify-around mt-16'>
-                <motion.div className='children-1'
+            <div className='maindiv flex flex-col md:flex-row items-center justify-around mt-16 px-4 md:px-0'>
+                <motion.div className='children-1 w-[80%] md:w-[40%] text-center md:text-left mx-auto md:mx-0'
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -16,7 +15,11 @@ function Hero() {
                     <h3 className='text-[#CED4D7] text-2xl font-mono inline'>Hi There!</h3> <span className="wave text-2xl" role="img" aria-labelledby="wave">
                         👋🏻
                     </span>
-                    <h1 className='text-[#CED4D7] text-6xl font-bold font-mono'>I'M <span className='bg-clip-text text-[#CED4D7]'>HASSAAN <br /><span>SHAKIL</span></span></h1>
+                    <h1 className='text-[#CED4D7] text-4xl md:text-6xl font-bold font-mono'>
+                        I'M <span className='bg-clip-text text-[#CED4D7]'>
+                            HASSAAN <br /><span>SHAKIL</span>
+                        </span>
+                    </h1>
                     <div className='mt-3'>
                         <TypewriterText />
                     </div>
@@ -25,7 +28,7 @@ function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 0.5 }}
-                        className="group relative inline-flex items-center gap-3 p-2 cursor-pointer rounded-md border-2 bg-[#CED4D7] border-[#CED4D7] text-[#000] hover:text-black transition duration-300 mt-5"
+                        className="group relative inline-flex items-center gap-3 p-2 cursor-pointer rounded-md border-2 bg-[#CED4D7] border-[#CED4D7] text-[#000] hover:text-black transition duration-300 mt-5 "
                     >
                         <div className="svg-wrapper-1">
                             <div className="svg-wrapper transition-transform duration-300 group-hover:rotate-45">
@@ -47,12 +50,13 @@ function Hero() {
                     </motion.button>
 
                 </motion.div>
-                <div className='children-2'>
+
+                <div className='children-2 w-[80%] md:w-[40%] mt-10 md:mt-0 mx-auto md:mx-0'>
                     <motion.img
                         src={SvgIcon}
                         alt="..."
                         id='SvgIcon'
-                        className="transition-transform duration-500 hover:rotate-3 hover:scale-3d"
+                        className="transition-transform duration-500 hover:rotate-3 hover:scale-3d w-60 md:w-[400px] mx-auto"
                         initial={{ x: 80, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.5 }}

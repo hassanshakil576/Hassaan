@@ -86,17 +86,17 @@ function Projects() {
     return (
         <>
             <motion.div
-                className="text-center mt-20"
+                className="text-center mt-20 px-4"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: false, amount: 0.2 }}
             >
-                <h1 className="text-[#CED4D7] text-5xl font-bold font-mono">
+                <h1 className="text-[#CED4D7] text-3xl md:text-5xl font-bold font-mono">
                     MY RECENT <span className="text-white font-extrabold">WORK!</span>
                 </h1>
                 <motion.p
-                    className="text-[#CED4D7] text-md font-bold font-mono mt-2"
+                    className="text-[#CED4D7] text-sm md:text-md font-bold font-mono mt-2"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
@@ -109,11 +109,11 @@ function Projects() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center p-8">
                 {projectList.map((project, index) => (
                     <motion.div
-                        key={project.id}
+                        key={project.id} 
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        viewport={{ once: false, amount: 0.2 }}
+                        viewport={{ once: false, amount: 0.3 }}
                     >
                         <Card
                             Title={project.Title}
