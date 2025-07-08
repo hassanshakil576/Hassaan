@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 import Preloader from './components/PreLoader.jsx';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {

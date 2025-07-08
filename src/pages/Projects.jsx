@@ -4,7 +4,7 @@ import Card from '../components/Card';
 import passwordGeneratorPng from '../assets/Password-Gen.png';
 import QuizAppPng from '../assets/Quiz-App.PNG';
 import ShopAiPng from "../assets/Shop-Ai.PNG"
-import Textutils from "../assets/Textutils.Png"
+import Textutils from "../assets/Textutils.png"
 import Footer from '../components/Footer';
 
 function Projects() {
