@@ -5,6 +5,8 @@ import passwordGeneratorPng from '../assets/Password-Gen.png';
 import QuizAppPng from '../assets/Quiz-App.PNG';
 import ShopAiPng from "../assets/Shop-Ai.PNG"
 import Textutils from "../assets/Textutils.png"
+import Portfolio from "../assets/Portfolio.PNG"
+import BloggingApp from "../assets/Blogging-App.PNG"
 import Footer from '../components/Footer';
 
 function Projects() {
@@ -43,19 +45,19 @@ function Projects() {
         },
         {
             id: 5,
-            Title: "Textutils",
-            img: Textutils,
-            description: "TextUtils is a simple React-based text manipulation app that allows users to convert text to uppercase, lowercase, remove spaces, and clear text. It also provides basic text analysis, such as counting characters and words. Built with React and Bootstrap for a clean and responsive UI.",
-            githubLink: "https://github.com/hassanshakil576/React-Textutils",
-            demoLink: "https://react-textutils-self.vercel.app",
+            Title: "Portfolio",
+            img: Portfolio,
+            description: "A modern and responsive React portfolio showcasing my skills, projects, and passion for front-end development. The portfolio reflects clean UI, smooth animations and a mobile-friendly design.✨",
+            githubLink: "https://github.com/hassanshakil576/Hassaan",
+            demoLink: "https://hassaan-shakil.vercel.app",
         },
         {
             id: 6,
-            Title: "Textutils",
-            img: Textutils,
-            description: "TextUtils is a simple React-based text manipulation app that allows users to convert text to uppercase, lowercase, remove spaces, and clear text. It also provides basic text analysis, such as counting characters and words. Built with React and Bootstrap for a clean and responsive UI.",
-            githubLink: "https://github.com/hassanshakil576/React-Textutils",
-            demoLink: "https://react-textutils-self.vercel.app",
+            Title: "Blogging-App",
+            img: BloggingApp,
+            description: "A simple and user-friendly Blogging platform where users can register, log in, and manage their blog posts. Built using HTML, CSS, JavaScript, Bootstrap, and Firebase (Authentication + Realtime Database), the app provides an intuitive interface for creating, editing, and deleting blog entries. Users can also upload images to visually enhance their posts. Firebase ensures secure login, real-time data updates, and cloud storage for seamless user experience across devices.",
+            githubLink: "https://github.com/hassanshakil576/Blogging-App",
+            demoLink: "https://hassanshakil576.github.io/Blogging-App/",
         },
         {
             id: 7,
@@ -109,7 +111,7 @@ function Projects() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center p-8">
                 {projectList.map((project, index) => (
                     <motion.div
-                        key={project.id} 
+                        key={project.id}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
