@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import ProfileImg from "../assets/Profile.jpg"
 
 function Introduction() {
     return (
@@ -54,7 +55,7 @@ function Introduction() {
                     viewport={{ once: false }}
                 >
                     <img
-                        src="../src/assets/profile.jpg"
+                        src={ProfileImg}
                         alt="Profile"
                         className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-full object-cover border-2 border-[#CED4D7] shadow-lg hover:rotate-x-12 transition duration-300 mx-auto"
                     />
