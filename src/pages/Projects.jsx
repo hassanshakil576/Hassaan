@@ -7,6 +7,9 @@ import ShopAiPng from "../assets/Shop-Ai.PNG"
 import Textutils from "../assets/Textutils.png"
 import Portfolio from "../assets/Portfolio.PNG"
 import BloggingApp from "../assets/Blogging-App.PNG"
+import TodoApp from "../assets/Todo-App.PNG"
+import WeatherApp from "../assets/weather-app.PNG"
+
 import Footer from '../components/Footer';
 
 function Projects() {
@@ -61,19 +64,19 @@ function Projects() {
         },
         {
             id: 7,
-            Title: "Textutils",
-            img: Textutils,
-            description: "TextUtils is a simple React-based text manipulation app that allows users to convert text to uppercase, lowercase, remove spaces, and clear text. It also provides basic text analysis, such as counting characters and words. Built with React and Bootstrap for a clean and responsive UI.",
-            githubLink: "https://github.com/hassanshakil576/React-Textutils",
-            demoLink: "https://react-textutils-self.vercel.app",
+            Title: "Weather-App",
+            img: WeatherApp,
+            description: "This WeatherApp is a modern React-based weather application that fetches real-time weather data using the WeatherAPI. Users can search any city worldwide to view current temperature, humidity, wind speed, and weather conditions. The UI is clean and responsive, enhanced with smooth entry animations using Framer Motion for a refined user experience.",
+            githubLink: "https://github.com/hassanshakil576/Weather-App-React",
+            demoLink: "https://hweather-app-react.vercel.app",
         },
         {
             id: 8,
-            Title: "Textutils",
-            img: Textutils,
-            description: "TextUtils is a simple React-based text manipulation app that allows users to convert text to uppercase, lowercase, remove spaces, and clear text. It also provides basic text analysis, such as counting characters and words. Built with React and Bootstrap for a clean and responsive UI.",
-            githubLink: "https://github.com/hassanshakil576/React-Textutils",
-            demoLink: "https://react-textutils-self.vercel.app",
+            Title: "Todo-App",
+            img: TodoApp,
+            description: "This Todo App is built using React and provides complete CRUD functionality. Users can easily add new tasks, update existing ones, delete tasks they no longer need, and keep track of their daily activities. The app features a clean and responsive design, making it easy to use on both desktop and mobile devices.",
+            githubLink: "https://github.com/hassanshakil576/Todo-App-React",
+            demoLink: "https://todo-app-react-rho-flame.vercel.app",
         },
         {
             id: 9,
