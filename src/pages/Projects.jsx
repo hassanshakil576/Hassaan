@@ -8,7 +8,7 @@ import Textutils from "../assets/Textutils.png"
 import Portfolio from "../assets/Portfolio.PNG"
 import BloggingApp from "../assets/Blogging-App.PNG"
 import TodoApp from "../assets/Todo-App.PNG"
-import WeatherApp from "../assets/weather-app.png"
+import WeatherApp from "../assets/Weather-App.PNG"
 
 import Footer from '../components/Footer';
 
